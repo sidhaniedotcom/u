@@ -14,7 +14,7 @@ b="\u001b[34;1m"
 m="\u001b[35;1m"
 c="\u001b[36;1m"
 clear = lambda:os.system('clear')
-inf = (y+'T'+a+'E'+b+'L'+y+'E'+m+'G'+c+'R'+r+'A'+y+'M'+'  '+y+'S'+a+'C'+b+'R'+y+'A'+m+'P'+c+'E'+r+'R'+y+'  '+m+'B'+c+'Y'+r+' '+y+'S'+m+'I'+c+'D'+r+'H'+y+'A'+m+'N'+b+'I'+r+'E')
+inf = (y+'T'+a+'E'+b+'L'+y+'E'+m+'G'+c+'R'+r+'A'+y+'M'+'  '+y+'M'+a+'E'+b+'M'+y+'B'+m+'E'+c+'R'+r+'  '+m+'B'+c+'Y'+r+' '+y+'S'+m+'I'+c+'D'+r+'H'+y+'A'+m+'N'+b+'I'+r+'E')
 el=0
 def Sleep(timE):
     try:
