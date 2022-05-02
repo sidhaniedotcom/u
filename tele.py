@@ -58,12 +58,12 @@ if os.path.isfile('multi_log.txt'):
         else:
             pass
     else:
-        cv=input(" Mau menghapus session sebelumnya "+a+" (y/n) ? ")
+        cv=input(" Hapus sesi sebelumnya "+a+" (y/n) ? ")
         if cv=='y':
             with open('multi_log.txt', 'r') as f:
                 data = f.readlines()
             v=int((len(data))/2)
-            con=input(r+" Apakah kamu yakin ingin menghapus semua session terakhir "+a+" (y/n) ? ")
+            con=input(r+" Apakah kamu yakin ingin menghapus semua sesi terakhir "+a+" (y/n) ? ")
             if con in ['', 'n']:
                 print(m+" Now exiting..."+'\n'+a+"No files were deleted ! ")
                 sys.exit(1)
@@ -186,7 +186,7 @@ for s in range(v):
         n += 1
         if n % 20 == 0:
             info()
-            print (y+' waiting for 10 seconds to avoid flooding....')
+            print (y+' menunggu 10 detik untuk menghindari banjir ....')
             Sleep(10)  
         elif q>= 9:
             client.disconnect()
@@ -234,11 +234,11 @@ for s in range(v):
                 
                 q=0
             except PeerFloodError:
-                print(r+' Getting Flood Error from telegram. Script is stopping now. Please try again after some time.')
+                print(r+' Terdapat Kesalahan Banjir dari telegram. Skrip telah berhenti. Silakan coba lagi setelah beberapa waktu.')
                 Sleep(1)
                 q+= 1
             except UserPrivacyRestrictedError:
-                print(r+' The user\'s privacy settings do not allow you to do this. Skipping.')
+                print(r+' The user\'s Pengaturan privasi tidak mengizinkan Anda melakukan ini. Lewati saja.')
                 with open('Members.csv', 'r',encoding='UTF-8') as f:
                     dat = csv.reader(f,delimiter=",",lineterminator="\n")
                     for tad in dat:
